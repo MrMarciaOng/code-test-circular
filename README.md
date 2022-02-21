@@ -29,14 +29,11 @@ Use `npm` to install the project dependencies:
 ```bash
 npm install
 ```
+## Run the sample
 
-## Configuration
-
-### Create an API
-
-For the ["call an API"](https://auth0.com/docs/quickstart/spa/react/02-calling-an-api) page to work, you will need to [create an API](https://auth0.com/docs/apis) using the [management dashboard](https://manage.auth0.com/#/apis). This will give you an API identifier that you can use in the `audience` configuration field below.
-
-If you do not wish to use an API or observe the API call working, you should not specify the `audience` value in the next step. Otherwise, you will receive a "Service not found" error when trying to authenticate.
+```bash
+npm run dev
+```
 
 ### Configure credentials
 
@@ -56,7 +53,7 @@ To do this, first copy `src/auth_config.json.example` into a new file in the sam
 
 **Note**: Do not specify a value for `audience` here if you do not wish to use the API part of the sample.
 
-## Run the sample
+
 
 ### Compile and hot-reload for development
 
@@ -72,16 +69,9 @@ npm run dev
 
 ```bash
 npm run build
+npm run prod
 ```
 
-### Docker build
 
-To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
-
-### Run your tests
-
-```bash
-npm run test
-```
 
 
